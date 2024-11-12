@@ -1,0 +1,213 @@
+.contact-section {
+  padding: 30px 0;
+  background-color: #f7f9fc;
+  color: #000;
+}
+
+.contact-section.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-section.dark h2 {
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-content {
+  display: flex !important; /* Force side-by-side alignment */
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+  width: 60% !important; /* Fixed width for contact info */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-form {
+  width: 45% !important; /* Fixed width for form */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section.dark .contact-form {
+  background-color: #333;
+  color: #e0e0e0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  font-size: 2.0rem;
+  color: #000;
+}
+
+.contact-section.dark .contact-form h3 {
+  color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #000;
+}
+
+.contact-section.dark .form-group label {
+  color: #ffffff;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+}
+
+.contact-section.dark .form-group input,
+.contact-section.dark .form-group select {
+  background-color: #444;
+  color: #f0f0f0;
+  border: 1px solid #777;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.contact-section.dark button {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #4f46e5;
+}
+
+.contact-section.dark button:hover {
+  background-color: #3b38c2;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.contact-section.dark .error {
+  color: #ff8080;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column !important; /* Stack on small screens */
+  }
+  .contact-info,
+  .contact-form {
+    width: 100% !important; /* Full width on smaller screens */
+  }
+}
+
+/* Grundläggande dark mode-stilar för hela contact-sektionen */
+.dark-mode .contact-section {
+  background-color: #131b2b;
+  color: #e2e8f0;
+}
+
+.dark-mode .contact-section h2 {
+  color: #e2e8f0; /* Ljusa rubrikfärger */
+}
+
+/* Justeringar för kontaktinformationsboxar */
+.dark-mode .contact-info .info-box {
+  background-color: #2d3748;
+  color: #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .contact-info .info-box h3 {
+  color: #e2e8f0;
+}
+
+.dark-mode .contact-info .info-box p,
+.dark-mode .contact-info .info-box a {
+  color: #cbd5e0;
+}
+
+/* Formulär och inmatningsfält */
+.dark-mode .contact-form {
+  background-color: #2d3748;
+  color: #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .contact-form h3 {
+  color: #e2e8f0;
+}
+
+.dark-mode .form-group label {
+  color: #e2e8f0;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group select {
+  background-color: #2d3748;
+  color: #e2e8f0;
+  border: 1px solid #4a5568;
+}
+
+/* Knappar */
+.dark-mode button {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+.dark-mode button:hover {
+  background-color: #3b38c2;
+}
+
+/* Felsmeddelanden */
+.dark-mode .error {
+  color: #ff8080;
+}
+
+/* Statusmeddelande */
+.dark-mode .status-message {
+  color: #cbd5e0;
+}
+
